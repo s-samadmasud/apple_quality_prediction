@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Center the card horizontally */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Set the container height to 100vh for vertical centering */
+    }
+
+    /* Apply different background colors based on prediction */
+    .card.text-bg-success { /* Default green for Good prediction */
+      background-color: green;
+    }
+
+    .card.text-bg-success.text-white { /* White text for better visibility on green background */
+      color: white;
+    }
+
+    .card.text-bg-danger { /* Red for Bad prediction */
+      background-color: rgb(120, 22, 22);
+      color: white; /* White text for better visibility on red background */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card {{ 'text-bg-success' if prediction == 'Good' else 'text-bg-danger' }}" style="max-width: 30rem;">
+      <div class="card-body">
+        <h1>Prediction Result</h1>
+        <p><b>Predicted Quality:</b> {{ prediction }}</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

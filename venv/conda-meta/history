@@ -1,0 +1,43 @@
+==> 2024-09-12 03:51:49 <==
+# cmd: C:\Users\Zone\miniconda3\Scripts\conda-script.py create -p venv python==3.10.0 -y
+# conda version: 24.3.0
++defaults/noarch::tzdata-2024a-h04d1e81_0
++defaults/win-64::bzip2-1.0.8-h2bbff1b_6
++defaults/win-64::ca-certificates-2024.7.2-haa95532_0
++defaults/win-64::libffi-3.4.4-hd77b12b_1
++defaults/win-64::openssl-1.1.1w-h2bbff1b_0
++defaults/win-64::pip-24.2-py310haa95532_0
++defaults/win-64::python-3.10.0-h96c0403_3
++defaults/win-64::setuptools-72.1.0-py310haa95532_0
++defaults/win-64::sqlite-3.45.3-h2bbff1b_0
++defaults/win-64::tk-8.6.14-h0416ee5_0
++defaults/win-64::vc-14.40-h2eaa2aa_1
++defaults/win-64::vs2015_runtime-14.40.33807-h98bb1dd_1
++defaults/win-64::wheel-0.43.0-py310haa95532_0
++defaults/win-64::xz-5.4.6-h8cc25b3_1
++defaults/win-64::zlib-1.2.13-h8cc25b3_1
+# update specs: ['python==3.10.0']
+==> 2024-09-12 04:11:59 <==
+# cmd: C:\Users\Zone\miniconda3\Scripts\conda-script.py install scikit-learn
+# conda version: 24.3.0
+-defaults/win-64::openssl-1.1.1w-h2bbff1b_0
+-defaults/win-64::python-3.10.0-h96c0403_3
++defaults/noarch::pybind11-abi-5-hd3eb1b0_0
++defaults/win-64::blas-1.0-mkl
++defaults/win-64::icc_rt-2022.1.0-h6049295_2
++defaults/win-64::intel-openmp-2023.1.0-h59b6b97_46320
++defaults/win-64::joblib-1.4.2-py310haa95532_0
++defaults/win-64::mkl-2023.1.0-h6b88ed4_46358
++defaults/win-64::mkl-service-2.4.0-py310h2bbff1b_1
++defaults/win-64::mkl_fft-1.3.10-py310h827c3e9_0
++defaults/win-64::mkl_random-1.2.7-py310hc64d2fc_0
++defaults/win-64::numpy-1.26.4-py310h055cbcc_0
++defaults/win-64::numpy-base-1.26.4-py310h65a83cf_0
++defaults/win-64::openssl-3.0.15-h827c3e9_0
++defaults/win-64::python-3.10.14-he1021f5_1
++defaults/win-64::scikit-learn-1.5.1-py310hc64d2fc_0
++defaults/win-64::scipy-1.13.1-py310h8640f81_0
++defaults/win-64::tbb-2021.8.0-h59b6b97_0
++defaults/win-64::threadpoolctl-3.5.0-py310h9909e9c_0
+# update specs: ['scikit-learn']
+# neutered specs: ['python==3.10.14']

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Quality Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fruit Quality Prediction</h1>
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="size"><b>Size:</b></label>
+                <input type="text" class="form-control" id="size" name="size" required>
+                <label for="weight"><b>Weight:</b></label>
+                <input type="text" class="form-control" id="weight" name="weight" required>
+                <label for="sweetness"><b>Sweetness:</b></label>
+                <input type="text" class="form-control" id="sweetness" name="sweetness" required>
+                <label for="crunchiness"><b>Crunchiness:</b></label>
+                <input type="text" class="form-control" id="crunchiness" name="crunchiness" required>
+                <label for="juiciness"><b>Juiciness:</b></label>
+                <input type="text" class="form-control" id="juiciness" name="juiciness" required>
+                <label for="ripeness"><b>Ripeness:</b></label>
+                <input type="text" class="form-control" id="ripeness" name="ripeness" required>
+                <label for="acidity"><b>Acidity:</b></label>
+                <input type="text" class="form-control" id="acidity" name="acidity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
