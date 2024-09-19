@@ -4,11 +4,11 @@ import pickle
 from sklearn.svm import SVC
 
 # load model===========================================
-#svc = pickle.load(open('models/svc.pickle','rb'))
+svc = pickle.load(open('models/svc.pickle','rb'))
 
-with open("models\\model.pkl", "rb") as file:
+#with open("models\\model.pkl", "rb") as file:
     # Load the data from the file
-    loaded_model = pickle.load(file)
+    #loaded_model = pickle.load(file)
 
 app = Flask(__name__)
 
@@ -32,9 +32,9 @@ def predict():
                            float(juiciness), float(ripeness), float(acidity)]])
 
     # Make prediction using the loaded model
-    #prediction = svc.predict(user_input)[0]  # Assuming the model returns a single value
+    prediction = svc.predict(user_input)[0]  # Assuming the model returns a single value
 
-    prediction = loaded_model.predict(user_input)[0]
+    #prediction = loaded_model.predict(user_input)[0]
 
     # Format the prediction for display
     if prediction > 0.5:
