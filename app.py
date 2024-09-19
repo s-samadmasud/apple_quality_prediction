@@ -6,7 +6,7 @@ from sklearn.svm import SVC
 # load model===========================================
 #svc = pickle.load(open('models/svc.pickle','rb'))
 
-with open("models\model.pkl", "rb") as file:
+with open("models\\model.pkl", "rb") as file:
     # Load the data from the file
     loaded_model = pickle.load(file)
 
